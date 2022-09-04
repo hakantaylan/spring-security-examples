@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>spring-security-jwt-example</artifactId>
     <name>spring-security-jwt-example</name>
-    <groupId>com.buraktas</groupId>
+    <groupId>com.example</groupId>
     <version>1.0-SNAPSHOT</version>
 
     <parent>

@@ -1,0 +1,16 @@
+// @no-log
+POST http://localhost:8080/auth/authenticate
+Accept: application/json
+Content-Type: application/json
+
+{
+  "username": "adminuser",
+  "password": "test"
+}
+
+###
+// @no-log
+GET http://localhost:8080/auth/me
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbnVzZXIiLCJBdXRob3JpdGllcyI6W3siYXV0aG9yaXR5IjoiUk9MRV9BRE1JTiJ9LHsiYXV0aG9yaXR5IjoiUk9MRV9VU0VSIn1dLCJleHAiOjE2NjIzMTI1ODEsImlhdCI6MTY2MjMwODk4MX0.l0D4Rp3gHMorZXRdCNKdhODQ03srBp6_0VhhWhGPOU5Ip9IIS79WRhacCdNsAQjeq0jQ1WYYacnTHIbNPTCLsw
+
+###
