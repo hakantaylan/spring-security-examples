@@ -1,0 +1,29 @@
+// @no-log
+# curl POST localhost:8080/register -H "Content-Type: application/json" --data '{"username":"xyz","password":"xyz"}'
+POST localhost:8080/register?trace=true
+Content-Type: application/json
+
+{
+  "username": "hakan",
+  "password": "xyz"
+}
+
+###
+//@no-log
+# curl POST localhost:8080/authenticate  -H "Content-Type: application/json" --data '{  "username": "hakan", "password": "xyz"}'
+POST localhost:8080/authenticate
+Content-Type: application/json
+
+{
+  "username": "hakan",
+  "password": "xyz"
+}
+
+###
+
+//@no-log
+
+GET localhost:8080/hello-world
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJoYWthbiIsImV4cCI6MTY2MjMxNjA1OSwiaWF0IjoxNjYyMjk0NDU5fQ.oEZJ9JGFDXPDvfrvqKr1tMhLKQ-U2v_hAfGK3uYuGKw9_N0TQrDiNTarZakSuk_PxN4ZBbTCYC2k2RmgjTBH3A
+
